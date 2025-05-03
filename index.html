@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>IncluDO</title>
+</head>
+<body>
+  <h1>Gestione Corsi IncluDO</h1>
+
+  <h2>Nuovo Partecipante</h2>
+  <form id="form-partecipante">
+    <input type="text" id="nome" placeholder="Nome" required />
+    <input type="text" id="cognome" placeholder="Cognome" required />
+    <input type="text" id="paese" placeholder="Paese di origine" required />
+    <input type="text" id="istruzione" placeholder="Livello di istruzione" required />
+    <input type="text" id="lingue" placeholder="Lingue" required />
+    <input type="text" id="ambito" placeholder="Ambito di interesse" required />
+    <button type="submit">Iscriviti al Corso</button>
+  </form>
+
+ 
+  <ul id="lista-partecipanti"></ul>
+
+  <h2>Nuova Azienda</h2>
+<form id="form-azienda">
+  <input type="text" id="nomeAzienda" placeholder="Nome azienda" required />
+  <input type="text" id="settore" placeholder="Settore" required />
+  <input type="text" id="descrizione" placeholder="Descrizione" required />
+  <input type="text" id="posizioni" placeholder="Posizioni aperte" required />
+  <label for="seleziona-partecipante">Partecipante:</label>
+  <select id="seleziona-partecipante">
+  <option disabled selected>Seleziona un partecipante</option>
+  </select>
+  <input type="text" id="posizione-offerta" placeholder="Posizione da offrire" required />
+  <button type="submit">Offri Posizione</button>
+</form>
+
+
+
+  <script type="module" src="./src/main.ts"></script>
+
+</body>
+</html>
