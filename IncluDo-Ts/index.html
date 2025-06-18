@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IncluDO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>IncluDO – Formazione per tutti</h1>
+
+  <section>
+    <h2>Iscrizione Partecipante</h2>
+    <form id="form-partecipante">
+      <input type="text" id="nome" placeholder="Nome" required />
+      <input type="text" id="cognome" placeholder="Cognome" required />
+      <input type="text" id="paese" placeholder="Paese di origine" required />
+      <input type="text" id="istruzione" placeholder="Livello di istruzione" required />
+      <input type="text" id="lingue" placeholder="Lingue (es: Italiano, Inglese)" required />
+      <input type="text" id="ambito" placeholder="Ambito di formazione" required />
+      <button type="submit">Iscriviti</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Crea un Corso</h2>
+    <form id="form-corso">
+      <input type="text" id="titoloCorso" placeholder="Titolo del corso" required />
+      <input type="text" id="descrizioneCorso" placeholder="Descrizione" required />
+      <input type="text" id="settoreCorso" placeholder="Settore professionale" required />
+      <input type="number" id="durataCorso" placeholder="Durata (ore)" required />
+      <button type="submit">Crea Corso</button>
+    </form>
+  </section>
+
+  <script src="dist/app.js" type="module"></script>
+</body>
+</html>
+
+
