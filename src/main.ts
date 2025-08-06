@@ -35,7 +35,7 @@ function caricaPartecipanti() {
 }
 
 
-// Corso predefinito
+
 const corso = new Corso(
   "Corso di Sartoria",
   "Corso pratico di cucito e confezionamento abiti",
@@ -43,7 +43,7 @@ const corso = new Corso(
   100
 );
 
-// Selettori
+
 const form = document.getElementById("form-partecipante") as HTMLFormElement;
 const lista = document.getElementById("lista-partecipanti") as HTMLUListElement;
 
@@ -78,7 +78,7 @@ form.addEventListener("submit", (e) => {
 
   form.reset();
 
-    // Aggiungi partecipante anche alla tendina
+    
     const option = document.createElement("option");
     option.value = nuovoPartecipante.cognome;
     option.text = `${nuovoPartecipante.nome} ${nuovoPartecipante.cognome}`;    
@@ -106,7 +106,7 @@ formAzienda.addEventListener("submit", (e) => {
     .map((p) => p.trim());
 
   const posizioneOfferta = (document.getElementById("posizione-offerta") as HTMLInputElement).value;
-  const partecipanteIndex = selectPartecipante.selectedIndex - 1; // -1 per l'opzione placeholder
+  const partecipanteIndex = selectPartecipante.selectedIndex - 1; 
 
   if (partecipanteIndex >= 0) {
     const partecipanteSelezionato = corso.iscritti[partecipanteIndex];
